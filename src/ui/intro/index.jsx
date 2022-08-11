@@ -17,13 +17,17 @@ export default function Intro({}) {
         <img src={starUrl} alt="women middle" className="w-6 h-6" />
       </div>
       {/* job*/}
-      <div className="flex g-1 text-gray-500">
+      <div className="flex g-1 text-gray-500 ">
         <img src={jobUrl} alt="job icon" className="img w-6 h-6 "></img>
         <p>Fisioterapeuta</p>
       </div>
-      <div className="flex text-gray-500">
+      <div className="flex text-gray-500 border-b-2 border-black pb-2">
         <img src={petUrl} alt="job icon" className="img w-6 h-6"></img>
         <p>10279 </p>
+      </div>
+      <div>
+        Garota trans querendo se divertir! Se ficou curioso joga Nina cdzinha no
+        google e confere!
       </div>
     </div>
   );
