@@ -9,7 +9,7 @@ const x_icontUrl =
 
 export default function MesssagesSection({}) {
   return (
-    <div className="border-2 border-black w-[70%]">
+    <div className="border-2 border-black w-[75%]">
       {/* nav */}
       <div className="flex justify-start items-center w-[100%] border-b-2 border-gray-500 p-4">
         <ProfileImage icon={ProfileIcon.src} alt="women_profile" size={8} />

@@ -3,8 +3,8 @@ import MessageMe from "../messagesection/messageme";
 
 export default function Messages({}) {
   return (
-    <div className="flex flex-col p-2 flex-1  ">
-      {/* <div className=" overflow-y-auto scrollbar-hide ">
+    <div className="flex flex-col flex-1 h-[80%]  ">
+      <div className=" overflow-y-auto scrollbar-hide ">
         <Message />
         <Message />
         <Message />
@@ -25,7 +25,7 @@ export default function Messages({}) {
         <Message />
         <Message />
         <Message />
-      </div> */}
+      </div>
     </div>
   );
 }
