@@ -23,7 +23,7 @@ export default function Intro({}) {
           width="24px"
           height="24px"
           className="Expand"
-          stroke-linecap="round"
+          strokeLinecap="round"
           aria-labelledby="924a17790df7a37d"
         >
           <g>
