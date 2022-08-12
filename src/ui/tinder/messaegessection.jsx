@@ -34,8 +34,8 @@ export default function MesssagesSection({}) {
       </div>
 
       {/* messages */}
-      <div className="flex flex-col width-[100%]  p-2">
-        {/* <div className="overflow-y-auto scrollbar-hide">
+      <div className="flex flex-col h-[90%] p-2">
+        <div className="overflow-y-auto scrollbar-hide">
           <MessageSection />
           <MessageSection />
           <MessageSection />
@@ -57,7 +57,7 @@ export default function MesssagesSection({}) {
           <MessageSection />
           <MessageMe />
           <MessageMe />
-        </div> */}
+        </div>
       </div>
     </div>
   );
