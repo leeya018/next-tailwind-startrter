@@ -5,7 +5,7 @@ import Messages from "@/ui/messages";
 export default function NavSection({}) {
   return (
     <div className="border-2 border-black w-[30%]">
-      <div className="flex flex-col">
+      <div className="flex flex-col h-[100%]">
         {/* nav */}
         <Nav />
         {/* nav-line */}

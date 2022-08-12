@@ -4,7 +4,7 @@ import NavSection from "./navsection";
 
 export default function Tinder({}) {
   return (
-    <div className="h-[100vh] bg-white flex  box-border">
+    <div className="h-[100vh] bg-white flex  box-border max-h-[100vh]">
       <NavSection />
       <MessagesSection />
       <ProfileSection />
