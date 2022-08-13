@@ -30,6 +30,7 @@ export default function Carusel({}) {
         {urls.map((item, ind) => {
           return (
             <div
+              key={ind}
               className={`bg-gray-400 flex-1 rounded-full ${
                 ind == count ? "h-2" : "h-1"
               }`}
