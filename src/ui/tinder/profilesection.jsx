@@ -1,6 +1,7 @@
 import womenMiddle from "@/images/women_middle.png";
 import Intro from "@/ui/intro";
 import DecisionButton from "@/ui/button/decision";
+import Carusel from "@/ui/carusel";
 
 export default function ProfileSection({}) {
   return (
@@ -9,8 +10,7 @@ export default function ProfileSection({}) {
   "
     >
       <div className="overflow-y-auto scrollbar-hide   h-[90vh]">
-        <img src={womenMiddle.src} alt="women middle" className="h-[70%]" />
-
+        <Carusel />
         {/* into */}
         <Intro />
       </div>
