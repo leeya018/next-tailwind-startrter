@@ -1,3 +1,7 @@
+import HobbyLabel from "@/ui/label/hobby";
+import PassionLabel from "ui/label/passion";
+// import HobbyLabel from "@/ui/label/hobby";
+
 const starUrl =
   "https://tinder.com/static/build/0726a6ca3b8f633c2eb8836d7f2886ff.webp";
 
@@ -51,20 +55,32 @@ export default function Intro({}) {
       </div>
       <div className="">
         <div>
-          Garota trans querendo se divertir! Se ficou curioso joga Nina cdzinha
-          no google e confere!
+          Gosto de piadas e faço o menor barquinho de papel do mundo... posso
+          provar. Eu estudo a maior parte do tempo. Sou advogada e concurseira
+          quase concursada. Não gosto de fascismo, preconceito, machismo,
+          elitismo... Enfim, gente babaca em geral. Ps2: se você acha que pode
+          me comprar com comida... Pode ser coxinha de jaca? "Minha solidão não
+          depende da presença ou ausência de pessoas; ao contrário, odeio quem
+          rouba minha solidão sem, em troca, me oferecer uma verdadeira
+          companhia"
         </div>
-        <div>
-          Garota trans querendo se divertir! Se ficou curioso joga Nina cdzinha
-          no google e confere!
-        </div>{" "}
-        <div>
-          Garota trans querendo se divertir! Se ficou curioso joga Nina cdzinha
-          no google e confere!
-        </div>{" "}
-        <div>
-          Garota trans querendo se divertir! Se ficou curioso joga Nina cdzinha
-          no google e confere!
+        {/* hobbies */}
+        <div className="flex flex-wrap gap-2 py-5">
+          <HobbyLabel name={"play"} url={petUrl} />
+          <HobbyLabel name={"sport"} url={petUrl} />
+          <HobbyLabel name={"fish"} url={petUrl} />
+          <HobbyLabel name={"drive"} url={petUrl} />
+          <HobbyLabel name={"cook"} url={petUrl} />
+        </div>
+
+        <div className=" border-t-2 border-gray-500">
+          <h1 className="text-gray-600 font-bold text-lg">Passions : </h1>
+          <div className="flex flex-wrap gap-2 pt-5">
+            <PassionLabel name="sex" />
+            <PassionLabel name="sex" />
+            <PassionLabel name="sex" />
+            <PassionLabel name="sex" />
+          </div>
         </div>
       </div>
     </div>
