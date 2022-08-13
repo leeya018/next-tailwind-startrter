@@ -24,10 +24,28 @@ export default function Carusel({}) {
     setCount((prev) => prev - 1);
   }
 
+  function getElements() {
+    return (
+      <div className="absolute h-4 w-[100%] flex gap-2 justify-around top-1">
+        {urls.map((item, ind) => {
+          return (
+            <div
+              className={`bg-gray-400 flex-1 rounded-full ${
+                ind == count ? "h-2" : "h-1"
+              }`}
+            ></div>
+          );
+        })}
+      </div>
+    );
+  }
+
   return (
     <div className="relative h-[60%]">
+      {getElements()}
+
       <span
-        className={`absolute text-4xl font-bold p-2 top-[50%] text-gray-600 ${
+        className={`absolute text-4xl font-bold p-2 top-[50%] text-white ${
           count == 0 ? "hidden" : ""
         }`}
         onClick={decreaseCount}
@@ -35,7 +53,7 @@ export default function Carusel({}) {
         {"<"}
       </span>
       <span
-        className={`absolute text-4xl font-bold top-[50%] right-1 text-gray-600  p-2 ${
+        className={`absolute text-4xl font-bold top-[50%] right-1 text-white  p-2 ${
           count == 3 ? "hidden" : ""
         }`}
         onClick={increaseCount}
