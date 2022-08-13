@@ -9,7 +9,7 @@ export default function ProfileImage({
   return (
     <Image
       className1={`flex p-2 justify-center items-center gap-2 hover:rounded-full ${hover}`}
-      className2={`w-${size} h-${size} rounded-full border-2 border-white`}
+      className2={`w-${size} h-${size} rounded-full border-2 border-white shadow-md`}
       icon={icon}
       alt="profile icon "
     >
